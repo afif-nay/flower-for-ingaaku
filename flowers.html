@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Flower for You</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation: rotate 10s linear infinite;
+        }
+
+        .petal {
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            background: radial-gradient(circle, #ff6f61 40%, transparent 70%);
+            border-radius: 50%;
+            transform-origin: bottom center;
+        }
+
+        .petal:nth-child(1) {
+            transform: rotate(0deg);
+        }
+        .petal:nth-child(2) {
+            transform: rotate(45deg);
+        }
+        .petal:nth-child(3) {
+            transform: rotate(90deg);
+        }
+        .petal:nth-child(4) {
+            transform: rotate(135deg);
+        }
+        .petal:nth-child(5) {
+            transform: rotate(180deg);
+        }
+        .petal:nth-child(6) {
+            transform: rotate(225deg);
+        }
+        .petal:nth-child(7) {
+            transform: rotate(270deg);
+        }
+        .petal:nth-child(8) {
+            transform: rotate(315deg);
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30px;
+            height: 30px;
+            background: #ffcc00;
+            border-radius: 50%;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .message {
+            position: absolute;
+            bottom: 20px;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="center"></div>
+    </div>
+    <div class="message">You are as beautiful as this flower! 🌸 aa sayang ingaa maap yoo sayang aa baru bisa kasih bungaa kayak gini tapi nanti aa usahain kasih yang asli I LOVE YOU🤍🌷</div>
+</body>
+</html>
